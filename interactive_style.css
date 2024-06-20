@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(234, 239, 255, 0.9);
+}
+nav {
+    padding: 20px;
+    margin: 10px;
+}
+
+a {
+    font-size: 20px;
+    margin: 15px;
+    color: rgba(20, 3, 3, 0.9);
+}
+
+a:hover {
+    color: rgba(255, 40, 40, 0.963);
+    font-size: 30px;
+    transition: font-size 0.5s ease, color 1s ease;
+}
+
+button {
+    margin: 20px;
+    padding: 16px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 190, .9);
+}
+
+button:focus {
+    animation: grow 1s;
+}
+
+@keyframes grow {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+img {
+    width: 150px;
+    height: auto;
+    padding: 20px;
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
